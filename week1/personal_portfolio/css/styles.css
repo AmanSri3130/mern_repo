@@ -1,0 +1,208 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Navigation */
+header {
+    background: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+
+/* Home */
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.home h1 {
+    font-size: 45px;
+}
+
+.home h1 span {
+    color: #00a8cc;
+}
+
+.home p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background: #00a8cc;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Common Sections */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+/* Education */
+.education-card {
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+/* Projects */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+
+    padding: 25px;
+    background: #f5f5f5;
+
+    border-radius: 8px;
+}
+
+
+/* Contact */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+
+    background: #00a8cc;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008ba3;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home p {
+        font-size: 17px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
